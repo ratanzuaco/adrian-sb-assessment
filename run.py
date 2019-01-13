@@ -13,7 +13,7 @@ def start():
 
 class GuessGender(Resource):
     def get(self):
-        response = 'Hi, let me guess your gender by giving me your name.'
+        response = 'Hi. Let me guess your gender by giving me your name.'
 
         return {'responseCode': '000', 'message': response}, 200
 
