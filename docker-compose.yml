@@ -7,3 +7,10 @@ services:
       - .:/usr/src/app
     ports:
       - 5315:80
+
+post_build:
+    commands:
+    - printf '[{"name":"ggContainer","imageUri":"904076527854.dkr.ecr.us-east-2.amazonaws.com/docker-repo:latest"}]' > imagedefinitions.json
+    
+artifacts:
+    files: imagedefinitions.json
