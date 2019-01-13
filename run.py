@@ -1,7 +1,7 @@
 from flask import Flask, request
 from flask_restful import Resource, Api
 
-import os
+import markdown
 
 app = Flask(__name__)
 
@@ -9,7 +9,7 @@ api = Api(app)
 
 @app.route("/")
 def start():
-    """Render README file"""
+    return markdown.markdownFromFile("README.md")
 
 class GuessGender(Resource):
     def get(self):
