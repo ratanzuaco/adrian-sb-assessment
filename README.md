@@ -10,24 +10,24 @@ This RESTful API allows you to:
 - AWS (platform): []()
 - REST endpoint: [http://18.217.255.145:5315](http://18.217.255.145:5315)
 
-### Instructions
+## Instructions
 
-#### GET method
+### GET method
 
-****REQUEST****
+***REQUEST***
 `GET http://18.217.255.145:5315/guessgender`
 
-****RESPONSE****
+***RESPONSE***
 `('...snappy comment...')`
 
-#### POST method
+### POST method
 
-****REQUEST****
+***REQUEST***
 `POST http://18.217.255.145:5315/guessgender`
 
 ```JSON
 {"name":"[name]"}
 ```
 
-****RESPONSE****
+***RESPONSE***
 `('...gender guess response...')`
