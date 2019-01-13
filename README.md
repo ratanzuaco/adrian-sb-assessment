@@ -5,29 +5,29 @@ This RESTful API allows you to:
 - make the system guess your gender (by providing it with your name) through a POST request.
 
 ## Project (Assessment) links:
-- DockerHub (image repo): [a link](https://cloud.docker.com/u/ratanzuaco/repository/docker/ratanzuaco/adrian-sb-assessment-docker)
-- GitHub (code repo): [a link](https://github.com/ratanzuaco/adrian-sb-assessment)
-- AWS (platform): [a link]()
-- REST endpoint: [a link](http://18.217.255.145)
+- DockerHub (image repo): [https://cloud.docker.com/u/ratanzuaco/repository/docker/ratanzuaco/adrian-sb-assessment-docker](https://cloud.docker.com/u/ratanzuaco/repository/docker/ratanzuaco/adrian-sb-assessment-docker)
+- GitHub (code repo): [https://github.com/ratanzuaco/adrian-sb-assessment](https://github.com/ratanzuaco/adrian-sb-assessment)
+- AWS (platform): []()
+- REST endpoint: [http://18.217.255.145:5315](http://18.217.255.145:5315)
 
 ### Instructions
 
 #### GET method
 
 ****REQUEST****
-'GET http://18.217.255.145:5315/guessgender'
+`GET http://18.217.255.145:5315/guessgender`
 
 ****RESPONSE****
-('...snappy comment...')
+`('...snappy comment...')`
 
 #### POST method
 
 ****REQUEST****
-'POST http://18.217.255.145:5315/guessgender'
+`POST http://18.217.255.145:5315/guessgender`
 
-'''JSON
+```JSON
 {"name":"[name]"}
-'''
+```
 
 ****RESPONSE****
-('...gender guess response...')
+`('...gender guess response...')`
